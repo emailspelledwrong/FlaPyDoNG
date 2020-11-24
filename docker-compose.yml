@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:1.17
+    container_name: nginx
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 80:80
+    networks:
+      - soconet
+    depends_on:
+      - soshaly
+  soshaly:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: soshaly
+    command: gunicorn --bind 0.0.0.0:8000 --workers 4 "initialize:initialize()"
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/usr/src/
+    networks:
+      soconet:
+        aliases:
+          - soshaly
+
+networks:
+  soconet:
