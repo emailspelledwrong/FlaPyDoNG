@@ -36,14 +36,14 @@ Flask & Jinja do the heavy-lifting here.  A little bit of Python and HTML make i
 # Credits
 Special thanks to the following people/organizations, without whose help I would not have gotten to this point:
 
-Robert K. Fewster
-Julian Nash, https://pythonise.com, https://www.youtube.com/channel/UC5_oFcBFlawLcFCBmU7oNZA
-AwesomeOpenSource.com, https://www.youtube.com/c/AwesomeOpenSource/
-https://realpython.com
-https://pythonspeed.com
-https://flask.palletsprojects.com
-nginx.org
-docs.docker.com
-https://hub.docker.com/u/tiangolo
-Many user posts at StackOverflow.com
-GitHub
+- Robert K. Fewster
+- Julian Nash (https://pythonise.com, https://www.youtube.com/channel/UC5_oFcBFlawLcFCBmU7oNZA)
+- AwesomeOpenSource.com (https://www.youtube.com/c/AwesomeOpenSource/)
+- https://realpython.com
+- https://pythonspeed.com
+- https://flask.palletsprojects.com
+- nginx.org
+- docs.docker.com
+- https://hub.docker.com/u/tiangolo
+- Many user posts at StackOverflow.com
+- GitHub
