@@ -7,8 +7,8 @@ Technologies-at-Large: Flask Blueprint, Jinja, Docker-Compose, JavaScript, HTML,
 - Clone it on your Linux box or WSL2
 - Install Docker
 - Inside the main project folder, issue this command:
-   docker-compose up -d --build
-   That will use the docker-compose file to fire up the containers and their network, but let them run in the background.
+   docker-compose up -d --build  
+That will use the docker-compose file to fire up the containers and their network, but let them run in the background.
 - Hit http://localhost
 
 # Raison d'Etre
