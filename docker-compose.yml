@@ -9,23 +9,23 @@ services:
     ports:
       - 80:80
     networks:
-      - soconet
+      - grapevine
     depends_on:
-      - soshaly
-  soshaly:
+      - frontend
+  frontend:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: soshaly
+    container_name: frontend
     command: gunicorn --bind 0.0.0.0:8000 --workers 4 "initialize:initialize()"
     ports:
       - 8000:8000
     volumes:
       - ./:/usr/src/
     networks:
-      soconet:
+      grapevine:
         aliases:
-          - soshaly
+          - frontend
 
 networks:
-  soconet:
+  grapevine:
